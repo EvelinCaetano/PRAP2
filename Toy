@@ -1,0 +1,63 @@
+ @PrimaryKey(autoGenerate = true)
+    @NonNull
+    @ColumnInfo(name = ",mId")
+    private int mId;
+
+    @Nullable
+    @ColumnInfo(name = "mName")
+    private String mName;
+
+    private String mcreationDate;
+
+    public Museum(@Nullable String creationDate, String Name, int NickName, int StateOfUse) {
+        mId = Id;
+        mCreationDate = creationDate;
+        mName = Name;
+        mNickName = NickName;
+        mStateOfUse = StateOfUse;
+    }
+
+    public int getId() {
+        return mId;
+    }
+
+    public void setId(int id) {
+        mId = id;
+    }
+    
+    public String getCreationDate() {
+        return mCreationDate;
+    }
+    
+    public void setCreationDate(String creationDate) {
+        mCreationDate = creationDate;
+    }
+
+    public String getName() {
+        return mName;
+    }
+
+    public void setName(String name) {
+        mName = name;
+    }
+
+    public String getNickName() {
+        return mNickName;
+    }
+
+    public void setNickName(String NickName) {
+        mNickName = NickName;
+    }
+
+    public int getStateOfUse() {
+        return mStateOfUse;
+    }
+
+    public void setStateOfUse(int StateOfUse) {
+        mStateOfUse = StateOfUse;
+    }
+
+    private String mNickName;
+    private int mStateOfUse;
+
+}
